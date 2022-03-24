@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="20dp"
+    tools:context=".Ajouter_Etudiant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Un Etudiant" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Dans La Liste" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/imageViewMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/placeholder" />
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/buttonUpload"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisir une photo"
+            app:backgroundTint="@color/button_color" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom" />
+
+        <EditText
+            android:id="@+id/editTextNom"
+            style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez Votre Nom"></EditText>
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prenom" />
+
+        <EditText
+            android:id="@+id/editTextPrenom"
+            style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez Votre Prenom"></EditText>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ville" />
+
+        <Spinner
+            android:id="@+id/spinnerVille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="Femme"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homme"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonAjouter"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            app:backgroundTint="@color/button_color" />
+
+        <Button
+            android:id="@+id/buttonAfficher"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La Liste des etudiants"
+            app:backgroundTint="@color/button_color" />
+
+
+    </LinearLayout>
+</ScrollView>
