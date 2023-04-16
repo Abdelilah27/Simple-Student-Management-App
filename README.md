@@ -13,7 +13,7 @@ The app follows the Model-View-Controller (MVC) architecture. The backend is imp
 
 ## Libraries
 
-* [Volley](https://developer.android.com/training/volley) is a networking library for Android that makes it easy to perform network requests and parse the responses.
+* [Volley](https://developer.android.com/training/volley) - is a networking library for Android that makes it easy to perform network requests and parse the responses.
 * [Gson](https://github.com/google/gson) - A Java serialization/deserialization library to convert Java Objects into JSON and back
 * [Picasso](https://square.github.io/picasso/) - A powerful image downloading and caching library for Android
 
